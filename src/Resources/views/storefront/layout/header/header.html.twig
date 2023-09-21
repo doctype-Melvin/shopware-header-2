@@ -1,14 +1,18 @@
 {% sw_extends '@Storefront/storefront/layout/header/header.html.twig'%}
 
 {% block layout_header_search %}
-    <div class="col col-sm order-sm-1 header-search-col">
-        <div class="row justify-content-center align-items-center">
+    <div class="col col-sm order-sm-1 header-search-col d-none d-sm-flex">
+        <div class="row justify-content-center align-items-center ">
             <span class="col-auto fw-bold text-uppercase">Damen</span>
             <span class="col-auto fw-bold text-uppercase">Herren</span>
             <span class="col-auto fw-bold text-uppercase">Sale</span>
             <span class="col-auto fw-bold text-uppercase">#Fashioneight</span>
         </div>
     </div>
+
+    {% block layout_header_navigation_toggle %}
+ {{ parent() }}
+{% endblock %}
 {% endblock %}
 
 {% block layout_header_actions %}
@@ -42,3 +46,4 @@
         </div>
     </div>
 {% endblock %}
+

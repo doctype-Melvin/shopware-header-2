@@ -1,12 +1,31 @@
 {% sw_extends '@Storefront/storefront/layout/header/header.html.twig'%}
 
 {% block layout_header_search %}
-    <div class="col order-2 col-sm order-sm-1 header-search-col">
-        <div class="row justify-content-center">
-            <p class="col-auto fw-bold category">DAMEN</p>
-            <p class="col-auto fw-bold category">HERREN</p>
-            <p class="col-auto fw-bold category">SALE</p>
-            <p class="col-auto fw-bold category">#FASHIONEIGHT</p>
+    <div class="col col-sm order-sm-1 header-search-col">
+        <div class="row justify-content-center align-items-center">
+            <span class="col-auto fw-bold category">Damen</span>
+            <span class="col-auto fw-bold category">Herren</span>
+            <span class="col-auto fw-bold category">Sale</span>
+            <span class="col-auto fw-bold category">#Fashioneight</span>
+        </div>
+    </div>
+{% endblock %}
+
+{% block layout_header_actions %}
+    <div class="col-auto order-1">
+        <div class="row justify-content-end">
+            <div class="col-auto">
+                {% sw_icon 'search' %}
+            </div>
+            <div class="col-auto">
+                {% sw_icon 'heart' %}
+            </div>
+            <div class="col-auto">
+                {% sw_icon 'avatar' %}
+            </div>
+            <div class="col-auto">
+                {% sw_icon 'cart' %}
+            </div>
         </div>
     </div>
 {% endblock %}

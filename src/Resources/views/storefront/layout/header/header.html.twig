@@ -14,17 +14,30 @@
 {% block layout_header_actions %}
     <div class="col-auto order-1">
         <div class="row justify-content-end">
-            <div class="col-auto">
-                {% sw_icon 'search' %}
+            <div class="col-auto p-0">
+                <button type="button" class="btn">
+                    {% sw_icon 'search' %}
+                </button>
             </div>
-            <div class="col-auto">
+            <div class="col-auto p-0">
+                <button type="button" class="btn">
                 {% sw_icon 'heart' %}
+                </button>
             </div>
-            <div class="col-auto">
+            <div class="col-auto p-0">
+                <button type="button" class="btn">
                 {% sw_icon 'avatar' %}
+                </button>
             </div>
-            <div class="col-auto">
+            <div class="col-auto p-0">
+                <button type="button" class="btn">
+                <div class="col position-relative">
                 {% sw_icon 'cart' %}
+                <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-warning p-1">
+                2
+                </span>
+                </div>
+                </button>
             </div>
         </div>
     </div>
